@@ -1,10 +1,4 @@
 require "rails_helper"
-# User Story 2, Course Index Page
-# As a user,
-# When I visit a course index page,
-# Then I see each course in the system including:
-# - the course's name
-# - each student in the course listed in order from highest grade to lowest grade
 
 RSpec.describe "Course Index Page", type: :feature do
   describe "As a user" do
