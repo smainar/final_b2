@@ -22,6 +22,7 @@ RSpec.describe "Student Show Page", type: :feature do
 
     it "When I visit a student show page, I see the student's info - name, courses, and grades" do
       visit student_path(@student_1)
+      
       within "#student-#{@student_1.id}" do
         expect(page).to have_content("Name: #{@student_1.name}")
         expect(page).to have_content("Course: #{@student_course_1.course.name}, Grade: #{@student_course_1.grade}")
